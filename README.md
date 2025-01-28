@@ -1,19 +1,19 @@
-# sms-spam_classifier-pkd-
-The SMS Spam Classifier is a machine learning project designed to detect spam messages. It uses natural language processing (NLP) techniques to analyze text data and classify messages as "spam" or "ham" (non-spam), ensuring efficient communication filtering.
+# sms-spam_detection-system-using NLP
+The SMS Spam Detection System is a machine learning project designed to detect spam messages. It uses natural language processing (NLP) techniques to analyze text data and classify messages as "spam" or "ham" (non-spam), ensuring efficient communication filtering.
 
 
 ```
-# SMS/E-mail Spam Classifier
+# SMS Spam Classifier
 
 ## 📚 Project Overview
-The **SMS/E-mail Spam Classifier** is a machine learning project that predicts whether a given SMS or e-mail is spam or not. Using Natural Language Processing (NLP) and a trained classification model, this project can filter out unwanted messages, helping users identify spam content effectively. It’s implemented with **Streamlit** for real-time predictions via an easy-to-use web interface.
+The **SMS Spam Classifier** is a machine learning project that predicts whether a given SMS is spam or not. Using Natural Language Processing (NLP) and a trained classification model, this project can filter out unwanted messages, helping users identify spam content effectively. It’s implemented with **Streamlit** for real-time predictions via an easy-to-use web interface.
 
 ### Objective:
-- To predict if an SMS or e-mail message is spam or not based on the content of the message.
+- To predict if an SMS is spam or not based on the content of the message.
 - To provide an interactive tool where users can paste a message and get a prediction on whether it is spam or not.
 
 ## 🚀 Features
-- **Text Input**: Paste or type an SMS or e-mail in the provided input box for classification.
+- **Text Input**: Paste or type an SMS in the provided input box for classification.
 - **Spam Prediction**: Instantly predicts if the message is **Spam** or **Not Spam** after clicking "Predict".
 - **Real-time Feedback**: The classification happens immediately without page reload.
 - **Streamlit UI**: A simple, responsive UI with input boxes, buttons, and output sections.
@@ -30,7 +30,7 @@ The **SMS/E-mail Spam Classifier** is a machine learning project that predicts w
     - Transforms the text data into a format that the machine learning model can understand using **TF-IDF** (Term Frequency-Inverse Document Frequency) vectorizer. This helps in representing the text as numerical features.
 
 3. **Model Training**: 
-    - The model is trained using machine learning algorithms like **Logistic Regression** or **Random Forest** to classify messages as spam or not based on the processed features.
+    - The model is trained using machine learning algorithms like **Logistic Regression**, **Random Forest**,etc to classify messages as spam or not based on the processed features.
   
 4. **Prediction**: 
     - The trained model is used to predict whether an incoming message (processed and vectorized) is spam or not.
@@ -46,7 +46,7 @@ The **SMS/E-mail Spam Classifier** is a machine learning project that predicts w
 ### 1. Clone the Repository
 First, clone the repository to your local machine:
 ```bash
-git clone https://github.com/Piyushkumar030/sms-spam_classifier-pkd-.git
+git clone https://github.com/Debleena2102/Sms-spam-detection-system-using-NLP.git
 ```
 
 ### 2. Install Dependencies
@@ -55,14 +55,7 @@ You need to install the necessary dependencies for the project. It’s recommend
 #### For Windows:
 ```bash
 python -m venv env
-env\Scripts\activate
-pip install -r requirements.txt
-```
-
-#### For macOS/Linux:
-```bash
-python3 -m venv env
-source env/bin/activate
+venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
@@ -94,6 +87,9 @@ The application requires the following Python libraries:
 - `nltk`
 - `pandas`
 - `numpy`
+- `wordcloud`
+- `xgboost`
+- `seaborn`
 
 All of these dependencies are listed in the `requirements.txt` file, which can be installed using the following command:
 
@@ -102,7 +98,7 @@ pip install -r requirements.txt
 ```
 
 ## 🧑‍🏫 Model Details
-The spam classifier model is based on supervised machine learning. It uses labeled SMS and e-mail data to classify messages as spam or not. The model is trained using popular classification algorithms such as **Logistic Regression** or **Random Forest**. The trained model is saved as a `.pkl` file, which is loaded during the Streamlit app execution.
+The spam classifier model is based on supervised machine learning. It uses labeled SMS and e-mail data to classify messages as spam or not. The model is trained using popular classification algorithms such as **Logistic Regression** or **Random Forest**. The trained model is saved as a **`.pkl`** file, which is loaded during the Streamlit app execution.
 
 ### Model Training:
 - **Dataset**: The dataset consists of SMS and e-mail messages labeled as spam or not.
@@ -113,7 +109,7 @@ After training the model, it is serialized and saved into a `.pkl` file so that 
 
 ## 🎨 User Interface
 The user interface of the application is built using **Streamlit**, a powerful framework for building interactive data applications with minimal code. The UI includes:
-- **Text Input Field**: For users to enter the SMS or e-mail content.
+- **Text Input Field**: For users to enter the SMS content.
 - **Predict Button**: When clicked, the app predicts whether the message is spam or not.
 - **Prediction Output**: The result (Spam or Not Spam) is displayed on the screen.
 
@@ -128,8 +124,7 @@ Streamlit also automatically takes care of responsiveness, making the app easy t
 ## 💬 Contact & Support
 Feel free to reach out if you have any questions, feedback, or suggestions. You can contact me through:
 
-- **Email**: [E-mail](piyushkumar030@example.com)
-- **LinkedIn**: [@linkedin Piyush Kumar Dey](https://linkedin.com/in/piyush-kumar-dey-291b19342)
-- **GitHub**: [@GitHub Piyush Kumar Dey](https://github.com/Piyushkumar030)
+- **Email**: [E-mail](maitydebleena01@gmail.com)
+- **GitHub**: [@GitHub Debleena Maity](https://github.com/Debleena2102)
 
 ---
